@@ -11,8 +11,13 @@ public class Kata3_Jonay {
         histogram.increment("ulpgc.es");
         histogram.increment("gmail.es");
         histogram.increment("gmail.es");
+        histogram.increment("outlook.es");
+        histogram.increment("yahoo.es");
         
-        HistogramDisplay histogramDisplay = new HistogramDisplay(histogram);
+        HistogramDisplay histogramDisplay = new HistogramDisplay(histogram,
+                                                                 "Emails",
+                                                                 "Ocurrences", 
+                                                                 "Custom Title");
         histogramDisplay.execute();
     }
     
